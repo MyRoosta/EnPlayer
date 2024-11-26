@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player with Repeatable SRT Subtitles</title>
+    <!-- لینک به فایل CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="player">
+        <input type="file" id="musicInput" accept="audio/*" >
+        <input type="file" id="subtitleInput" accept=".srt" >
+        <div>
+            <input type="number" id="repeatInput" placeholder="Repeats" min="5" >
+            <input type="number" id="delayInput" placeholder="Delay (ms)" min="4000" >
+        </div>
+        <audio id="audio" controls></audio>
+        <div class="subtitles" id="subtitles">Subtitles will appear here</div>
+    </div>
+    <!-- لینک به فایل JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
